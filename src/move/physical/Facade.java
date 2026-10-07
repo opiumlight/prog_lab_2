@@ -9,12 +9,14 @@ public final class Facade extends PhysicalMove {
     }
 
     @Override
-    public void applyOppEffects(Pokemon p) {
-        if (this.power == 140) {
-            this.power = 70;
-        }
-       switch (p.getCondition()) {
-           case POISON, PARALYZE, BURN -> this.power = 140;
+    public double calcBaseDamage(Pokemon att, Pokemon def) {
+       switch (att.getCondition()) {
+           case POISON, PARALYZE, BURN -> {
+               return super.calcBaseDamage(att, def) * 2;
+           }
+           default -> {
+               return super.calcBaseDamage(att, def);
+           }
        }
     }
 
