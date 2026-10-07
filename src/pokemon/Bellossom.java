@@ -10,9 +10,6 @@ public final class Bellossom extends Gloom {
         super(name, level);
         setType(Type.NORMAL);
         setStats(73, 95, 62, 85, 65, 85);
-        this.addMove(new SwordsDance());
-        this.addMove(new Facade());
-        this.addMove(new Acid());
         this.addMove(new QuiverDance());
     }
 }

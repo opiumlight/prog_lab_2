@@ -10,9 +10,6 @@ public final class Barbaracle extends Binacle {
         super(name, level);
         setType(Type.NORMAL, Type.WATER);
         setStats(72, 105, 115, 54, 86, 68);
-        this.addMove(new HoneClaws());
-        this.addMove(new XScissor());
-        this.addMove(new RazorShell());
         this.addMove(new BulkUp());
     }
 }

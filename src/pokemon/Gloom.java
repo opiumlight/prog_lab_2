@@ -9,8 +9,6 @@ public class Gloom extends Oddish {
         super(name, level);
         setType(Type.GRASS, Type.POISON);
         setStats(60, 65, 70, 85, 75, 40);
-        this.addMove(new SwordsDance());
-        this.addMove(new Facade());
         this.addMove(new Acid());
     }
 }
